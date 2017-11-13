@@ -13,7 +13,7 @@ I want to add a new link
 # Links can be tagged
 
 As a User
-So I can group my bookmarks
+So I can identify my bookmarks
 I want to be able to create a tag
 
 # Links can be filtered by a tag
