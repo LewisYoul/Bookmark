@@ -1,5 +1,6 @@
 require_relative '../../models/link.rb'
 require './app/app.rb'
+require 'database_cleaner'
 
 Capybara.app = BookmarkManager
 
@@ -10,5 +11,6 @@ feature "Creating links" do
     fill_in('URL', with: 'http://www.atpworldtour.com/')
     click_button('Save')
     expect(page).to have_content('ATP Tennis')
+    DatabaseCleaner.clean
   end
 end
