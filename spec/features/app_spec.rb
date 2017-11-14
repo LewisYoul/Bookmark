@@ -1,5 +1,5 @@
 require_relative '../../models/link.rb'
-require './bookmark_manager.rb'
+require './app/app.rb'
 
 
 Capybara.app = BookmarkManager

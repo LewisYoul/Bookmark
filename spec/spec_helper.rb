@@ -1,9 +1,10 @@
 ENV['RACK_ENV'] = 'test'
 
+require './models/link.rb'
 require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
-require_relative '../bookmark_manager.rb'
+require_relative '../app/app.rb'
 
 Capybara.app = BookmarkManager
 

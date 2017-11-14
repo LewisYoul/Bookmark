@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/lewis/Repositories/Makers_Academy/4_Week/Bookmark/spec/features/bookmark_manager_spec.rb": [
+      "/Users/marcovanali/Desktop/Projects/4Week_MA/Bookmark/spec/features/app_spec.rb": [
         1,
         1,
         null,
@@ -9,38 +9,18 @@
         1,
         null,
         null,
-        1,
-        1,
         1,
         1,
         1,
         1,
         0,
+        0,
+        0,
         null,
         null,
         null
-      ],
-      "/home/lewis/Repositories/Makers_Academy/4_Week/Bookmark/models/link.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1
       ]
     },
-    "timestamp": 1510659089
+    "timestamp": 1510660228
   }
 }
