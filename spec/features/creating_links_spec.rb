@@ -9,5 +9,6 @@ feature "Creating links" do
     fill_in('Title', with: 'ATP Tennis')
     fill_in('URL', with: 'http://www.atpworldtour.com/')
     click_button('Save')
+    expect(page).to have_content('ATP Tennis')
   end
 end

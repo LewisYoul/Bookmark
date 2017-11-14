@@ -6,10 +6,18 @@ class BookmarkManager < Sinatra::Base
 
   enable :sessions
 
+  get '/' do
+    'Hello'
+  end
+
   get '/links' do
-    'sbb'
-      @app_links = Link.all
+    @app_links = Link.all
      erb(:links)
+  end
+
+  post '/addlink' do
+    Link.create(title: params[:Title], url: params[:URL])
+    redirect '/links'
   end
 
   get '/links/new' do
