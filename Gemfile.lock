@@ -138,6 +138,7 @@ DEPENDENCIES
   data_mapper
   dm-migrations
   dm-postgres-adapter
+  rack
   rspec
   rubocop
   simplecov

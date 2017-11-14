@@ -6,8 +6,13 @@ class BookmarkManager < Sinatra::Base
 
   enable :sessions
 
+  get '/' do
+    'Hello'
+  end
+
   get '/links' do
-    @app_links = Link.all
-    erb(:links)
+    'sbb'
+      @app_links = Link.all
+     erb(:links)
   end
 end
