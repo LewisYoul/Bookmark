@@ -5,7 +5,7 @@ class BookmarkManager < Sinatra::Base
 
   enable :sessions
 
-  get '/' do
-    erb(:index)
+  get '/links' do
+    erb(:links)
   end
 end

@@ -1,11 +1,17 @@
+require_relative '../../models/link.rb'
 require './bookmark_manager.rb'
+
 
 Capybara.app = BookmarkManager
 
 
-feature 'index' do
-  scenario 'There is a Link in the home page' do
-    visit ('/')
-    find_link('BBC').visible?
+feature 'links' do
+  scenario 'Viewing links' do
+    Link.create(url: 'http://www.bbc.co.uk', title: 'BBC')
+    visit '/links'
+    expect(page.status_code).to eq 200
+    within 'ul#links' do
+      expect(page).to have_content('BBC')
+    end
   end
 end
