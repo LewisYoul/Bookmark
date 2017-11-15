@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-14T15:22:29+00:00">2017-11-14T15:22:29+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-14T16:11:55+00:00">2017-11-14T16:11:55+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>24</b> relevant lines. 
-    <span class="green"><b>24</b> lines covered</span> and
+    <b>25</b> relevant lines. 
+    <span class="green"><b>25</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,7 +51,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#7832d950106d2514908b0a403dcd5cd46657ca2d" class="src_link" title="spec/features/app_spec.rb">spec/features/app_spec.rb</a></td>
+        <td class="strong"><a href="#664d96bdad126ec18f19552bb630ce63da2617b3" class="src_link" title="spec/features/app_spec.rb">spec/features/app_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>22</td>
         <td>13</td>
@@ -61,11 +61,11 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#41221df9e85430b2c2b9e544a17e4e6d618e1448" class="src_link" title="spec/features/creating_links_spec.rb">spec/features/creating_links_spec.rb</a></td>
+        <td class="strong"><a href="#58ad53ab14c3058a87dce1e33e332cfff40ebfa5" class="src_link" title="spec/features/creating_links_spec.rb">spec/features/creating_links_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>15</td>
-        <td>11</td>
-        <td>11</td>
+        <td>16</td>
+        <td>12</td>
+        <td>12</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -86,7 +86,7 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="7832d950106d2514908b0a403dcd5cd46657ca2d">
+        <div class="source_table" id="664d96bdad126ec18f19552bb630ce63da2617b3">
   <div class="header">
     <h3>spec/features/app_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -237,13 +237,13 @@
 </div>
 
       
-        <div class="source_table" id="41221df9e85430b2c2b9e544a17e4e6d618e1448">
+        <div class="source_table" id="58ad53ab14c3058a87dce1e33e332cfff40ebfa5">
   <div class="header">
     <h3>spec/features/creating_links_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -263,79 +263,85 @@
           <code class="ruby">require &#39;./app/app.rb&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;database_cleaner&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
           <code class="ruby">Capybara.app = BookmarkManager</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">feature &quot;Creating links&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">  scenario &quot;uses form to submit new link&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
           <code class="ruby">    visit(&#39;/links/new&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
           <code class="ruby">    fill_in(&#39;Title&#39;, with: &#39;ATP Tennis&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">    fill_in(&#39;URL&#39;, with: &#39;http://www.atpworldtour.com/&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
           <code class="ruby">    click_button(&#39;Save&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content(&#39;ATP Tennis&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">    DatabaseCleaner.clean</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
