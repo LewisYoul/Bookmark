@@ -1,6 +1,25 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/lewis/Repositories/Makers_Academy/4_Week/Bookmark/spec/features/add_tags_spec.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/home/lewis/Repositories/Makers_Academy/4_Week/Bookmark/spec/features/app_spec.rb": [
         1,
         1,
@@ -44,6 +63,6 @@
         null
       ]
     },
-    "timestamp": 1510755891
+    "timestamp": 1510764834
   }
 }
