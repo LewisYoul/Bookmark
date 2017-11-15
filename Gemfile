@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.1'
 
-group :test, :development do
+  gem 'rack'
   gem 'capybara'
   gem 'data_mapper'
   gem 'dm-postgres-adapter'
@@ -10,12 +10,7 @@ group :test, :development do
   gem 'dm-transactions'
   gem 'sinatra'
   gem 'rspec'
-end
-
-group :test do
-  gem 'rack'
   gem 'simplecov'
   gem 'simplecov-console'
   gem 'rubocop'
   gem 'database_cleaner'
-end
