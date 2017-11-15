@@ -11,7 +11,7 @@ feature "tags" do
     fill_in('URL', with: 'www.atpworldtour.com')
     fill_in('tag', with: 'tennis')
     click_button('Save')
-    link = Link.first
-    expect(link.tags.map(&:name)).to include('tennis')
+    link = Link.last
+    expect(link.tags[0].name).to eq('tennis')
   end
 end
