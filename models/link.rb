@@ -1,4 +1,6 @@
-require_relative '../app/data_mapper_setup.rb'
+require 'data_mapper'
+require 'dm-postgres-adapter'
+require 'dm-migrations'
 
 class Link
 
