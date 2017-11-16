@@ -1,12 +1,3 @@
-require_relative '../../models/link.rb'
-require './app/app.rb'
-require 'database_cleaner'
-
-DatabaseCleaner.strategy = :truncation
-
-
-Capybara.app = BookmarkManager
-
 
 feature 'links' do
   scenario 'Viewing links' do
@@ -17,6 +8,5 @@ feature 'links' do
       expect(page).to have_content('BBC')
     end
     DatabaseCleaner.clean
-    #link.destroy
   end
 end

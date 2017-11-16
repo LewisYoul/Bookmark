@@ -2,4 +2,7 @@
 <% @links.each do |link| %>
 <h3> <a href="<%= link.url %>"><%= link.title %></a></h3>
 <% end %>
+<form action="/links/new">
+  <input type="submit" value="New Bookmark">
+</form>
 </div>

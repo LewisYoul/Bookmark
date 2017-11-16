@@ -1,15 +1,17 @@
-require_relative '../../models/link.rb'
-require './app/app.rb'
-require 'database_cleaner'
-
-Capybara.app = BookmarkManager
-DatabaseCleaner.strategy = :truncation
 
 feature "tags" do
   scenario "creating a tag" do
     create_link('ATP Tennis', 'http://www.atpworldtour.com', 'tennis')
     link = Link.last
     expect(link.tags[0].name).to eq('tennis')
+    DatabaseCleaner.clean
+  end
+  scenario "creating multiple tags" do
+    create_link('ATP Tennis', 'http://www.atpworldtour.com', 'tennis david goffin')
+    link = Link.last
+    expect(link.tags[0].name).to eq('tennis')
+    expect(link.tags[1].name).to eq('david')
+    expect(link.tags[2].name).to eq('goffin')
     DatabaseCleaner.clean
   end
   scenario "filter by tag" do
@@ -20,5 +22,6 @@ feature "tags" do
     expect(page).to have_content('ATP Tennis')
     expect(page).to have_content('Tennis.com')
     expect(page).not_to have_content('BBC')
+    DatabaseCleaner.clean
   end
 end
