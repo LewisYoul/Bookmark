@@ -5,6 +5,7 @@ require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
 require_relative '../app/app.rb'
+require_relative './features/web_helpers.rb'
 
 Capybara.app = BookmarkManager
 

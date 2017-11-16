@@ -3,6 +3,7 @@ require './app/app.rb'
 require 'database_cleaner'
 
 Capybara.app = BookmarkManager
+DatabaseCleaner.strategy = :truncation
 
 feature "Creating links" do
   scenario "uses form to submit new link" do
@@ -10,6 +11,7 @@ feature "Creating links" do
     fill_in('Title', with: 'ATP Tennis')
     fill_in('URL', with: 'http://www.atpworldtour.com/')
     click_button('Save')
+    p Link.all
     expect(page).to have_content('ATP Tennis')
     DatabaseCleaner.clean
   end
