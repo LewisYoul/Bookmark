@@ -12,7 +12,7 @@ class BookmarkManager < Sinatra::Base
   enable :sessions
 
   get '/' do
-    'Hello'
+    redirect '/links'
   end
 
   get '/links' do
