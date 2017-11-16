@@ -1,4 +1,5 @@
 <div id='links'>
+Welcome <%= @email %>
 <% @links.each do |link| %>
 <h3> <a href="<%= link.url %>"><%= link.title %></a></h3>
 <% end %>

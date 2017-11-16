@@ -9,10 +9,21 @@ class BookmarkManager < Sinatra::Base
   enable :sessions
 
   get '/' do
+    redirect '/users/new'
+  end
+
+  get '/users/new' do
+    erb(:signup)
+  end
+
+  post '/users' do
+    User.create(email: params[:email], password: params[:password])
+    session[:email] = params[:email]
     redirect '/links'
   end
 
   get '/links' do
+    @email = session[:email]
     @links = Link.all
      erb(:links)
   end
