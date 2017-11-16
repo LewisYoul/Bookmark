@@ -142,6 +142,7 @@ DEPENDENCIES
   dm-postgres-adapter
   dm-transactions
   rack
+  rake
   rspec
   rubocop
   simplecov
@@ -152,4 +153,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.16.0.pre.3
+   1.16.0
