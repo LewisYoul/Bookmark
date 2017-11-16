@@ -9,9 +9,7 @@ feature "tags" do
   scenario "creating multiple tags" do
     create_link('ATP Tennis', 'http://www.atpworldtour.com', 'tennis david goffin')
     link = Link.last
-    expect(link.tags[0].name).to eq('tennis')
-    expect(link.tags[1].name).to eq('david')
-    expect(link.tags[2].name).to eq('goffin')
+    expect(link.tags.map(&:name)).to include('tennis', 'david', 'goffin')
     DatabaseCleaner.clean
   end
   scenario "filter by tag" do
