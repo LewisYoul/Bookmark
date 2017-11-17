@@ -7,10 +7,13 @@ require_relative './password_attribute'
 class User
 
   include DataMapper::Resource
-  include PasswordAttribute
 
   property :id, Serial
   property :email, String
-  property :password, String
+  property :encrypted_password, Text
+
+  def password=(password)
+    self.encrypted_password = BCrypt::Password.create(password)
+  end
 
 end

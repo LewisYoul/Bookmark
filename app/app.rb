@@ -22,10 +22,7 @@ end
   end
 
   post '/users' do
-    # password = BCrypt::Password.create(params[:password])
-    user = User.first_or_create(email: params[:email])
-    user.password=(params[:password])
-    user.save
+    User.create(email: params[:email], password: params[:password])
     session[:email] = params[:email]
     redirect '/links'
   end
