@@ -9,6 +9,8 @@ require 'database_cleaner'
 require_relative '../app/app.rb'
 require_relative './features/web_helpers.rb'
 
+
+
 Capybara.app = BookmarkManager
 DatabaseCleaner.strategy = :truncation
 
