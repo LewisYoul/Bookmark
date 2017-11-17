@@ -5,6 +5,11 @@ require './models/data_mapper_setup'
 
 class BookmarkManager < Sinatra::Base
 
+helpers do
+  def current_user
+    @current_user ||= User.first(email: session[:email])
+  end
+end
 
   enable :sessions
 
